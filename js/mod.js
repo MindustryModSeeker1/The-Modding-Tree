@@ -6,7 +6,7 @@ let modInfo = {
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
-	discordLink: "",
+	discordLink: "https://discord.gg/GrMEPW7JZT",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
 }
