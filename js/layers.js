@@ -35,15 +35,6 @@ addLayer("K", {
             description: "Point gain is multiplied by 1.5.",
             cost: new Decimal(4),
         },
-        13: {
-            name: "Third Attribute of Mercy",
-            description: "Point gain is now multiplied by 'compassion points^0.5'.",
-            cost: new Decimal(7),
-            effect() {
-                return player[this.layer].points.add(1).pow(0.5)
-            },
-            effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
-        }
         // Look in the upgrades docs to see what goes here!
     },
     layerShown(){return true}
